@@ -19,8 +19,7 @@ time.sleep(5)
 listD=[listB.index(u)+1 for u in listC]
 listE=[]
 
-for element in listD:
-    k=element
+for k in listD:
     boton=driver.find_element_by_xpath("/html/body/div[3]/form/input[2]")
     materiak=driver.find_element_by_xpath('/html/body/div[3]/form/select/option[{}]'.format(k))
     time.sleep(2)
